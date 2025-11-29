@@ -31,6 +31,7 @@ describe("Calculator Tests", () => {
        cy.get("#display").should("have.value", "6");
     });
 
+    //Multiplication for making sure 6 * 7 = 42:
     it("Multiplication Test: 6 * 7 = 42", () => {
        cy.get("#btn-6").click();
        cy.get("#btn-multiply").click();
@@ -39,6 +40,7 @@ describe("Calculator Tests", () => {
        cy.get("#display").should("have.value", "42");
     });
 
+    //Division for making sure 15 / 3 = 5:
     it("Division Test: 15 / 3 = 5", () => {
        cy.get("#btn-1").click();
        cy.get("#btn-5").click();
